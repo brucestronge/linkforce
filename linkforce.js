@@ -8,7 +8,7 @@ firstName = fullName.split(' ')[0]
 lastName = fullName.split(' ')[1]
 
 $(' .title').html()
-var fullName = $(' .title').html()
+var title = $(' .title').html()
 
 var data = { firstName: firstName, lastName: lastName, title: title }
 
@@ -20,7 +20,7 @@ json = JSON.stringify(data)
   return json;
 }
 
-copy() // => "{"firstName": "etc"}""
+copy() // => "{"firstName": "lastName": "title"}""
 
 
 // salesforce
@@ -32,7 +32,7 @@ $('#name_firstlea2').value
 firstName = $('#name_firstlea2').value
 
 $('#name_lastlea2').value
-firstName = $('#name_lastlea2').value
+lastName = $('#name_lastlea2').value
 
 $('#lea3').value
 title = $('#lea3').value
@@ -53,4 +53,4 @@ function eventFire(el, etype){
   eventFire($('.btn'), 'click')
 }
 
-paste('{"firstName": "etc"}')
+paste('{"firstName": "lastName": "title"}')
