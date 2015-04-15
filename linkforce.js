@@ -39,6 +39,8 @@ title = $('#lea3').value
 
 	)
 
+paste('{"firstName": "lastName": "title"}')
+
 function eventFire(el, etype){
   if (el.fireEvent) {
     el.fireEvent('on' + etype);
@@ -48,9 +50,7 @@ function eventFire(el, etype){
     el.dispatchEvent(evObj);
   }
 }
+  
+  )
 
-{
-  eventFire($('.btn'), 'click')
-}
-
-paste('{"firstName": "lastName": "title"}')
+eventFire($('.btn'), 'click')
